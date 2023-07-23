@@ -1,0 +1,50 @@
+$color-font: #d63d00;
+$background-color: #efaef5; 
+$background-color-box:#fff;
+$text-color-box: rgb(40, 40, 41);
+$color-bg-default: #33f;
+$font-default: Arial, Helvetica, sans-serif;
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background: $background-color;
+    background-size: cover;
+    font-family: $font-default;
+    margin: 0;
+}
+
+h1 {
+    color: $color-font;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    color: $color-font;
+    text-align: center;
+    width: 100%;
+}
+
+header,
+section,
+footer {
+    display: block;
+    float:left;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+#sobre{
+    background-color: #fff;
+}
+
+@import '../vitrine'
