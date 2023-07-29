@@ -1,0 +1,21 @@
+header .container {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    .hero{
+        background-image: url('../assets/bees.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200px;
+        height: 35rem;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+
+        h1{
+            text-align: center;
+            width: 100%;
+        }
+    }
+}

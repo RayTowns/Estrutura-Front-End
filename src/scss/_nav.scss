@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    align-items: center;
+    
+    .navigation {
+        
+        &__item{
+            color: $color-font;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-family: $font-default;
+            
+            &:hover{
+                color: #b14700;
+            }
+        }
+        
+    }
+}

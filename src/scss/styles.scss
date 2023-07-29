@@ -1,9 +1,11 @@
-$color-font: #d63d00;
-$background-color: #efaef5; 
+$color-font: #5a1f26;
+$background-color: #f5cc73;
+$color-item: #fbd0ff; 
 $background-color-box:#fff;
 $text-color-box: rgb(40, 40, 41);
 $color-bg-default: #33f;
 $font-default: Arial, Helvetica, sans-serif;
+$font-default-size: 1.2rem;
 
 html{
     font-size: 62.5%;
@@ -20,13 +22,25 @@ h1 {
     color: $color-font;
     text-align: center;
     width: 100%;
+    font-family: nice_honeyregular, sans-serif;
+    font-size: 45px;
+    text-shadow: 1px 1px 9px #b14700;
 }
 
 h2 {
     color: $color-font;
     text-align: center;
-    width: 100%;
+    font-family: nice_honeyregular, sans-serif;
+    font-size: 4rem;
 }
+
+h2 img{
+    height: 180px;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
 
 header,
 section,
@@ -36,6 +50,11 @@ footer {
     width: 100%;
 }
 
+section{
+    padding: 4rem 0;
+    margin: 0;
+}
+
 .container {
     display: flex;
     flex-flow: column;
@@ -43,8 +62,15 @@ footer {
     margin: 0 auto;
 }
 
-#sobre{
-    background-color: #fff;
-}
 
-@import '../vitrine'
+@import './vitrine';
+
+@import './fonts';
+
+@import './nav';
+
+@import './header';
+
+@import './sobre';
+
+@import './contact-form'

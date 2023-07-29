@@ -1,0 +1,57 @@
+#contact {
+
+    .container {
+        margin: 2rem 0 2rem 0;
+
+        h2 {
+            color: $color-font;
+            text-align: center;
+            font-family: nice_honeyregular, sans-serif;
+            font-size: 4rem;
+        }
+
+        form{
+            background-color: white;
+            border-radius: 1rem;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: nowrap;
+            padding: 1.2rem;
+            justify-content: space-between;
+            align-self: center;
+            width: 90%;
+            height: 8rem;
+
+            .contato__input{
+                height: 1.5rem;
+                width: 30rem;
+                display: flex;
+                align-self: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            textarea{
+                height: 5rem;
+                width: 35rem;
+                align-self: center;
+            }
+
+            button{
+                background-color: blueviolet;
+                border: 1px solid white;
+                border-radius: 1rem;
+                color: white;
+                font-weight: bold;
+                padding: .5rem 1rem;
+                font-size: $font-default-size;
+                text-decoration: none;
+                align-self: center;
+                margin-bottom: 1rem;
+
+                &:hover {
+                box-shadow: 0 0 15px 1px rgba(172, 72, 197, 197);
+                }
+            }
+        }
+    }
+}

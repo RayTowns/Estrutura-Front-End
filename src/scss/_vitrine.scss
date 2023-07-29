@@ -1,0 +1,74 @@
+#product{
+
+    .vitrine {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        &__item{
+
+            background-color: #f1a477;
+            border-radius: 1rem;
+            display: flex;
+            flex-flow: column;
+            font-family: lato, sans-serif;
+            font-weight: 100;
+            justify-content: center;
+            align-items: flex-start;        
+            min-height: 25rem;
+            padding: .25rem 1rem;
+
+            &:hover{
+
+                box-shadow: 0 0 15px 1px rgba(90, 31, 38, 38);
+                animation-name: animation;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                transform-origin: bottom;
+                animation-timing-function: ease;
+
+                @keyframes animation{
+                    0%   { transform: translateY(0); }
+                    25%  { transform: translateY(-25px); }
+                    100% { transform: translateY(0); }
+                }
+            
+            }
+
+            h3 {
+                color: $font-default;
+                color: white;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 2rem;
+                align-self: center;
+                font-weight: 300;
+            }
+        }
+
+        &__image{
+            height: 25rem;
+            width: 25rem;
+            border-radius: 55%;
+            display: flex;
+            align-self: center;
+        }
+
+        &__link {
+            background-color: blueviolet;
+            border: 1px solid white;
+            border-radius: 1rem;
+            color: white;
+            font-weight: bold;
+            padding: .5rem 1rem;
+            font-size: $font-default-size;
+            text-decoration: none;
+            align-self: center;
+            margin-bottom: 1rem;
+
+            &:hover {
+                box-shadow: 0 0 15px 1px rgba(172, 72, 197, 197);
+            }
+        }
+    }
+
+}

@@ -10,72 +10,51 @@
     <div id="root">
         <header>
             <div class="container">
-                <h2>LOGO</h2>
-                <nav></nav>
-                <a href="#sobre">Sobre</a>
-                <a href="#product">Produtos</a>
-                <a href="#contact">Contato</a>
+                <h2><img src="./assets/logo.png" alt="Logo Bee Health"></h2>
+                <nav class="navigation">
+                    <a class="navigation__item" href="#sobre">Sobre</a>
+                    <a class="navigation__item" href="#product">Produtos</a>
+                    <a class="navigation__item" href="#contact">Contato</a>
+                </nav>
+                <div class="hero">
+                    <h1>Conheça a Bee Health!</h1>
+                </div>
             </div>
         </header>
 
         <section id="sobre">
             <div class="container">
-                <aside>
-                    <div id="localizacao">
-
-                    </div>
-                </aside>
                 <article>
-                    <h1>Sobre Nós</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                       Possimus illum aliquid est repellendus corporis voluptatum 
-                       quod accusantium cum nulla, vero unde. Culpa ab iure provident 
-                       perferendis, reprehenderit sed minima doloremque!</p>
-
-                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Possimus illum aliquid est repellendus corporis voluptatum 
-                        quod accusantium cum nulla, vero unde. Culpa ab iure provident 
-                        perferendis, reprehenderit sed minima doloremque!</p>
+                    <h2>Sobre Nós</h2>
+                    <p>Alimentação saudável com ingredientes de qualidade, sem conservantes, sem açúcar. Isto é possível!<br>
+                    <br> Desenvolvemos alimentos com muito sabor e qualidade para que você possa comer sem se preocupar com a qualidade
+                    do que consome ou dá para seus filhos comerem.<br>
+                    Somos uma empresa nacional que compra do pequeno produtor e ajuda os produtores locais a desenvolverem seus negócios.<br>
+                
+                    Conheça mais sobre nosso trabalho e produtos!</p>
                 </article>
             </div>
         </section>
 
         <section id="product">
             <div class="container">
+                <h2>Conheça nossos Produtos</h2>
                 <div class="vitrine">
                     <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto01</h3>
-                        <div class="vitrine__img"></div>
+                        <h3 class="vitrine__produto">Cookies</h3>
+                        <img src="./assets/cookie.jpg" alt="cookie" class="vitrine__image">
                         <p class="vitrine__descricao"></p>
                         <a href="" class="vitrine__link">Ver Detalhes</a>
                     </div>
                     <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto02</h3>
-                        <div class="vitrine__img"></div>
+                        <h3 class="vitrine__produto">Tortas</h3>
+                        <img src="./assets/pies.jpg" alt="pies" class="vitrine__image">
                         <p class="vitrine__descricao"></p>
                         <a href="" class="vitrine__link">Ver Detalhes</a>
                     </div>
                     <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto03</h3>
-                        <div class="vitrine__img"></div>
-                        <p class="vitrine__descricao"></p>
-                        <a href="" class="vitrine__link">Ver Detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto04</h3>
-                        <div class="vitrine__img"></div>
-                        <p class="vitrine__descricao"></p>
-                        <a href="" class="vitrine__link">Ver Detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto05</h3>
-                        <div class="vitrine__img"></div>
-                        <p class="vitrine__descricao"></p>
-                        <a href="" class="vitrine__link">Ver Detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto06</h3>
-                        <div class="vitrine__img"></div>
+                        <h3 class="vitrine__produto">Pães</h3>
+                        <img src="./assets/Bread.jpg" alt="Bread" class="vitrine__image">
                         <p class="vitrine__descricao"></p>
                         <a href="" class="vitrine__link">Ver Detalhes</a>
                     </div>
@@ -84,10 +63,11 @@
         </section>
         <section id="contact">
             <div class="container">
-                <h1>Contato</h1>
+                <h2>Faça o seu Pedido!</h2>
                 <form class="contato">
                     <input type="text" placeholder="Coloque seu nome" class="contato__input">
-                    <input type="text" placeholder="Coloque seu email" class="contato__input">
+                    <input type="text" placeholder="Coloque seu telefone" class="contato__input">
+                    <textarea rows="5" placeholder="Escreva o seu pedido aqui"></textarea>
                     <button class="contato__button">Enviar</button>
                 </form>
             </div>
