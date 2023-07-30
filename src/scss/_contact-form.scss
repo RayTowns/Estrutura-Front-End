@@ -2,6 +2,7 @@
 
     .container {
         margin: 2rem 0 2rem 0;
+        width: 90vw;
 
         h2 {
             color: $color-font;
@@ -20,11 +21,25 @@
             justify-content: space-between;
             align-self: center;
             width: 90%;
-            height: 8rem;
+            height: 10rem;
+
+            @media (max-width: 750px) {
+                width: 100%;
+                display: grid;
+                height: 200px;
+                overflow: hidden;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 1rem;
+            }
+
+            @media (min-width: 768px) and (max-width: 1199px) {
+                width: 100%;
+                gap: 0;
+            }
 
             .contato__input{
-                height: 1.5rem;
-                width: 30rem;
+                height: 2.3rem;
+                max-width: 35rem;
                 display: flex;
                 align-self: center;
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,7 +47,7 @@
 
             textarea{
                 height: 5rem;
-                width: 35rem;
+                max-width: 35rem;
                 align-self: center;
             }
 

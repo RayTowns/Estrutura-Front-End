@@ -1,8 +1,22 @@
 nav {
     display: flex;
-    justify-content: space-between;
-    width: 280px;
+    justify-content:space-evenly;
+    text-align: center;
+    width: 50%;
     align-items: center;
+
+    @media (max-width: 750px) {
+
+        .navigation{
+            width: 100%;
+        &__item{
+            display: flex;
+            position: relative;
+            flex-flow: row;
+            padding-left: 5rem;
+            }
+        }
+    }
     
     .navigation {
         
@@ -18,4 +32,5 @@ nav {
         }
         
     }
+
 }

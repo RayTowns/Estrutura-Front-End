@@ -7,6 +7,15 @@ $color-bg-default: #33f;
 $font-default: Arial, Helvetica, sans-serif;
 $font-default-size: 1.2rem;
 
+@viewport{
+    width: device-width;
+    zoom:1;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -33,14 +42,6 @@ h2 {
     font-family: nice_honeyregular, sans-serif;
     font-size: 4rem;
 }
-
-h2 img{
-    height: 180px;
-    width: auto;
-    display: flex;
-    align-items: flex-start;
-}
-
 
 header,
 section,
@@ -73,4 +74,6 @@ section{
 
 @import './sobre';
 
-@import './contact-form'
+@import './contact-form';
+
+@import './grids';
